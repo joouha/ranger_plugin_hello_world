@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ranger-plugin-hello-world"
+version = "0.1.0"
+description = "Simple plugin for ranger to demonstrate how plugins could be distributed as python packages"
+authors = ["joouha <12154190+joouha@users.noreply.github.com>"]
+license = "GPL-3.0-or-later"
+packages = [
+    { include = "ranger_plugins" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ranger-fm = "^1.9.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
